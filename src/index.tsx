@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -9,6 +11,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import i18next from './language/i18n';
 import rootReducer from './store/reducers';
+
+import './assets/scss/index.scss';
 
 const middlewares = createSagaMiddleware();
 

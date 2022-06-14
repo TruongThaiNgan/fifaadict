@@ -19,14 +19,12 @@ const Routers : RoutesType = {
   },
 };
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path={Routers.home.path} element={Routers.home.component} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path={Routers.home.path} element={Routers.home.component} />
+    </Routes>
+  </Router>
+);
 
 export default App;

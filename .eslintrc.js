@@ -20,6 +20,17 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
+    'import/extensions': ['error', 'never', { ignorePackages: true }],
+    'import/no-unresolved': 2,
+    'max-len': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx', '.native.js'],
+      },
+    },
   },
 };
